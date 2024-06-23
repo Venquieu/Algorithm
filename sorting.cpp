@@ -16,7 +16,7 @@ namespace sorting {
     }
 
     template<typename T>
-    void QuickSort(const int left, const int right, std::vector<T>* arr) {
+    void QuickSort(std::vector<T>* arr, const int left, const int right) {
         if (left < right) {
             int pivot = Partition(arr, left, right);
             QuickSort(arr, left, pivot - 1);
